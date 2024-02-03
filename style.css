@@ -1,0 +1,139 @@
+body {
+    background-image: url(todolist-Recovered.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    animation: animate 1s alternate infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animate {
+    0%{
+        background-image: url(todolist-Recovered.png);
+    }
+    100%{
+        background-image: url(todolist-Recovered2.png);
+    }
+}
+.todopage {
+    align-items: center;
+    text-align: center;
+    margin: 180px;
+    font-family: "Pixelify Sans", 'Courier New', Courier, monospace;
+    color: rgb(238, 154, 206);
+    animation: start 2s alternate;
+}
+
+@keyframes start {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.todopage h2 {
+    font-size: 30px;
+    margin-right: 11rem;
+}
+.row {
+    background: transparent;
+    align-items: center;
+    justify-content:space-between;
+    display:flex;
+    margin-left: 16rem;
+    position: absolute;
+    text-align: center;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+input {
+    flex: 1;
+    background: transparent;
+    color: rgb(233, 165, 208);
+    border: none;
+    outline: none;
+    margin-right: 160px;
+    padding: 8px;
+    font-family: "Pixelify Sans", 'Courier New', Courier, monospace;
+    font-weight: 20px;
+    font-size: 16px;
+}
+input::placeholder {
+    color: rgb(231, 194, 220);
+}
+
+button {
+    border: none;
+    outline: none;
+    text-align: center;
+    background-color: transparent;
+    color: rgb(238, 172, 216);
+    font-family: "Pixelify Sans", 'Courier New', Courier, monospace;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    color: rgb(232, 137, 199);
+}
+button:active {
+    text-shadow: 1px 1px 3px rgb(197, 197, 197);
+}
+ul li {
+    list-style: none;
+    font-size: 15px;
+    font-family: "Pixelify Sans", 'Courier New', Courier, monospace;
+    padding: 30px 0px 0px 50px;
+    user-select: none;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 200px;
+    margin-bottom: -30px;
+    display: flex;
+
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 50px;
+    left: 100px;
+}
+
+ul li.checked {
+    color: rgb(238, 172, 216);
+    text-decoration: line-through;
+}
+ul li span {
+    position:
+    margin-left: 285px;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: rgb(234, 163, 218);
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover {
+    color: rgb(232, 137, 199);
+}
+ul li span:active {
+    text-shadow: 1px 1px 3px rgb(197, 197, 197);
+}
+.container {
+    background-color: aqua;
+    width: 50%;
+    max-width: 50%;
+    height: auto;
+    margin-left: 200px;
+}
